@@ -22,5 +22,8 @@ catagory.click()
 choose = Select(driver.find_element_by_tag_name("select"))
 choose.select_by_visible_text("Clothing")
 
-units = driver.find
+units = driver.find_element_by_xpath("//button[@value='g']")
+units.click()
+
+driver.implicitly_wait(5)
 driver.quit()
